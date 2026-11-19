@@ -1,0 +1,27 @@
+name: Suggest an idea
+description: Something you'd like an app to do.
+labels: [idea]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This page is public.** Leave out personal details.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Otter Tracks
+        - Otter Mind
+        - Otter Blockade
+        - Otter Clock
+        - The website (ottersoftworks.com)
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like to do, and what gets in the way today?
+    validations:
+      required: true

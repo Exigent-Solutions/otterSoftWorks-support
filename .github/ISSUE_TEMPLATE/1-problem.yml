@@ -1,0 +1,45 @@
+name: Report a problem
+description: Something in an app or on the website isn't working right.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This page is public.** Leave out phone numbers, names, addresses and the text of your messages or notes. Crop or blur screenshots first.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Otter Tracks
+        - Otter Mind
+        - Otter Blockade
+        - Otter Clock
+        - The website (ottersoftworks.com)
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: In Android, go to Settings → Apps → the app; the version is at the bottom. Leave blank for the website.
+      placeholder: "0.3.0"
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: "Pixel 8, Android 16"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead. You can paste screenshots here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: private
+    attributes:
+      label: Privacy
+      options:
+        - label: I've left out personal details such as phone numbers, names and message text.
+          required: true
