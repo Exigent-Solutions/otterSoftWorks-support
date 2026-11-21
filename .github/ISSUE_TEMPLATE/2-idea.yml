@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        **This page is public.** Leave out personal details.
+        **This page is public.** Leave out personal details such as names, phone numbers, addresses and the text of your messages or notes.
   - type: dropdown
     id: app
     attributes:
