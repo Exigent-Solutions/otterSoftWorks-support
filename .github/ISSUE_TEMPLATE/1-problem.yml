@@ -5,7 +5,14 @@ body:
   - type: markdown
     attributes:
       value: |
-        **This page is public.** Leave out phone numbers, names, addresses and the text of your messages or notes. Crop or blur screenshots first.
+        **This page is public.** Anyone can read it, and search engines can find it.
+
+        Our apps keep everything on your phone and never send it to us, so we'll never ask for your real data. Please leave out:
+        - names, phone numbers, email and home addresses, and account details, yours or anyone else's
+        - the text of your messages, notes or time entries (describe what happened; for a spam text, retype it with names, numbers and links changed)
+        - exported files and backups
+
+        Crop or blur screenshots so no names, numbers or message text show.
   - type: dropdown
     id: app
     attributes:
@@ -41,5 +48,5 @@ body:
     attributes:
       label: Privacy
       options:
-        - label: I've left out personal details such as phone numbers, names and message text.
+        - label: I've left out personal details such as names, phone numbers, addresses and message text, and cropped or blurred any screenshots.
           required: true
